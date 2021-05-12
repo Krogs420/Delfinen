@@ -1,82 +1,92 @@
 package com.company;
 
 public class Member {
-    private String iD;
-    private String name;
-    private int age;
-    private String mail;
-    private boolean activeMember;
-    private boolean juniorSenior;
 
-    public Member(String iD, String name, int age, String mail, boolean activeMember, boolean juniorSenior, boolean motionComp) {
-        this.iD = iD;
-        this.name = name;
-        this.age = age;
-        this.mail = mail;
-        this.activeMember = activeMember;
-        this.juniorSenior = juniorSenior;
-        this.motionComp = motionComp;
-    }
 
-    @Override
-    public String toString() {
-        return "Member: " +
-                "ID: " + iD + '\'' +
-                "name = " + name + '\'' +
-                ", age = " + age +
-                ", mail = '" + mail + '\'' +
-                ", activeMember = " + activeMember +
-                ", juniorSenior = " + juniorSenior +
-                ", motionComp = " + motionComp;
-    }
+  private int iD;
+  private String name;
+  private int age;
+  private String mail;
+  private boolean activeMember;
+  private boolean juniorSenior;
 
-    public String getName() {
-        return name;
-    }
+  public Member(int iD, String name, int age, String mail, boolean activeMember, boolean juniorSenior, boolean motionComp) {
+    this.iD = iD;
+    this.name = name;
+    this.age = age;
+    this.mail = mail;
+    this.activeMember = activeMember;
+    this.juniorSenior = juniorSenior;
+    this.motionComp = motionComp;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @Override
+  public String toString() {
+    return "Member: " +
+        "ID: " + iD + '\'' +
+        "name = " + name + '\'' +
+        ", age = " + age +
+        ", mail = '" + mail + '\'' +
+        ", activeMember = " + activeMember +
+        ", juniorSenior = " + juniorSenior +
+        ", motionComp = " + motionComp;
+  }
 
-    public int getAge() {
-        return age;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public String getMail() {
-        return mail;
-    }
+  public int getAge() {
+    return age;
+  }
 
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
+  public void setAge(int age) {
+    this.age = age;
+  }
 
-    public boolean isActiveMember() {
-        return activeMember;
-    }
+  public String getMail() {
+    return mail;
+  }
 
-    public void setActiveMember(boolean activeMember) {
-        this.activeMember = activeMember;
-    }
+  public void setMail(String mail) {
+    this.mail = mail;
+  }
 
-    public boolean isJuniorSenior() {
-        return juniorSenior;
-    }
+  public boolean isActiveMember() {
+    return activeMember;
+  }
 
-    public void setJuniorSenior(boolean juniorSenior) {
-        this.juniorSenior = juniorSenior;
-    }
+  public void setActiveMember(boolean activeMember) {
+    this.activeMember = activeMember;
+  }
 
-    public boolean isMotionComp() {
-        return motionComp;
-    }
+  public boolean isJuniorSenior() {
+    return juniorSenior;
+  }
 
-    public void setMotionComp(boolean motionComp) {
-        this.motionComp = motionComp;
-    }
+  public void setJuniorSenior(boolean juniorSenior) {
+    this.juniorSenior = juniorSenior;
+  }
 
-    private boolean motionComp;
+  public boolean isMotionComp() {
+    return motionComp;
+  }
+
+  public void setMotionComp(boolean motionComp) {
+    this.motionComp = motionComp;
+  }
+
+  private boolean motionComp;
+
+  public int getiD() {
+    return iD;
+  }
+
+  public void setiD(int iD) {
+    this.iD = iD;
+  }
 }

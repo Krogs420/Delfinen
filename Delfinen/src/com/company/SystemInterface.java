@@ -15,7 +15,7 @@ public class SystemInterface {
             valid = true;
             switch (choice) {
                 case 1:
-                    administrator.makeNewMember();
+                    administrator.adminMenu();
                     break;
                 case 2:
                     //coachRun();
